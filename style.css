@@ -1,0 +1,22 @@
+h1 {
+    color: white;
+    background-color: black;
+}
+h2 {
+    background-color: aliceblue;
+}
+
+h3 {
+    color: white;
+    background-color: black;
+}
+
+p {
+    color:black;
+}
+div {
+	display: grid;
+    background-color:#567895; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
