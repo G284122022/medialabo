@@ -40,7 +40,15 @@ let px1 = document.createElement("p");
 px1.insertAdjacentElement("beforeend",p1);
 l.insertAdjacentElement("afterend",px1);
 // 練習4-4 箇条書き削除プログラム
-
+let z = document.querySelectorAll("li"); 
+for (let w of z) {
+	w.remove();
+} 
 
 // 練習4-5 箇条書き追加プログラム
-
+let w = document.querySelector("ul#location");
+for(let x of data) {
+	let li = document.createElement("li");
+	w.insertAdjacentElement("beforeend",li);
+	li.textContent = x.name + "...緯度:" + x.lat + " 経度:" + x.lng;
+}
