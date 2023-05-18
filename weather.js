@@ -46,6 +46,19 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
-console.log(data.name);
-console.log(data.main.temp_max);
-console.log(data.main.temp_min);
+let elem = document.querySelector("input#mytext");
+elem.setAttribute("placeholder","入力してね！");
+let cn = document.querySelector("li#cn");
+cn.setAttribute("placeholder","データを表示");
+
+let pcn1 = document.createElement("p");
+pcn1.textContent = data.name;
+cn.insertAdjacentElement("afterend",pcn1);
+
+let pcn2 = document.createElement("p");
+pcn2.textContenct = data.main.temp_max;
+pcn1.insertAdjacentElement("afterend",pcn2);
+
+let pcn3 = document.createElement("p");
+pcn3.textContent = data.main.temp_min;
+pcn2.insertAdjacentElement("afterend",pcn3);
