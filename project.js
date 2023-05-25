@@ -49,7 +49,10 @@ let submit = document.querySelector("button#submit");
 submit.addEventListener("click", getData);
 
 function getData() {
-    console.log(data.name);
-    console.log(data.main.temp_max);
-    console.log(data.main.temp_min);
+    let display = document.querySelector("p#display");
+    display.textContent = data.name;
+    let display2 = document.querySelector("p#display2");
+    display2.textContent = data.main.temp_max;
+    let display3 = document.querySelector("p#display3");
+    display3.textContent = data.main.temp_min;
 }
