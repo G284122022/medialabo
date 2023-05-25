@@ -49,10 +49,7 @@ let submit = document.querySelector("button#submit");
 submit.addEventListener("click", getData);
 
 function getData() {
-    let display = document.querySelector("p#display");
-    display.textContent = data.name;
-    let display2 = document.querySelector("p#display2");
-    display2.textContent = data.main.temp_max;
-    let display3 = document.querySelector("p#display3");
-    display3.textContent = data.main.temp_min;
+    let input = document.querySelector("input#nyuryoku");
+    let display = document.querySelector("div#display");
+    display.textContent = input.value;    
 }
