@@ -9,12 +9,66 @@
     <h1>
         世界の天気を調べよう！
     </h1>
-    <label for="nyuryoku">ここに検索:</label>
-    <input type="text" id="nyuryoku" name="nyuryoku" placeholder="検索キーワードを入力">
+    <!-- <label for="nyuryoku">ここに検索:</label>
+    <input type="text" id="nyuryoku" name="nyuryoku" placeholder="検索キーワードを入力"> -->
+    <select name="country" id="country">
+      <option value="">検索する都市を選んでください</option>
+      <option value="cn">北京</option>
+      <option value="jp">東京</option>
+      <option value="syd">シドニー</option>
+      <option value="sing">シンガポール</option>
+      <option value="Lon">ロンドン</option>
+      <option value="Par">パリ</option>
+      <option value="Rio">リオデジャネイロ</option>
+      <option value="New">ニューヨーク</option>
+      <option value="Los">ロサンゼルス</option>
+    </select>
     <button id="submit">検索</button>
     <div id="display">
-      
+      <table>
+        <tr>
+          <th>緯度</th>
+          <td id="lat">データ</td>
+        </tr>
+        <tr>
+          <th>経度</th>
+          <td id="lon">データ</td>
+        </tr>
+        <tr>
+          <th>天気</th>
+          <td id="wea">データ</td>
+        </tr>
+        <tr>
+          <th>最低気温</th>
+          <td id="min">データ</td>
+        </tr>
+        <tr>
+          <th>最高気温</th>
+          <td id="max">データ</td>
+        </tr>
+        <tr>
+          <th>湿度</th>
+          <td id="hum">データ</td>
+        </tr>
+        <tr>
+          <th>風速</th>
+          <td id="sp">データ</td>
+        </tr>
+        <tr>
+          <th>風向</th>
+          <td id="di">データ</td>
+        </tr>
+        <tr>
+          <th>都市名</th>
+          <td id="name">データ</td>
+        </tr>
+      </table>
     </div>
-        
+    <div id="picdisplay">
+      <img id="photo1" src="Teru.jpg">
+      <img id="photo2" src="Teru2.jpg">
+      <img id="photo3" src="Teru3.jpg">
+    </div>
+   
   </body>
 </html>
