@@ -33,7 +33,7 @@ function showResult(resp) {
     let lon = document.querySelector("td#lon");
     lon.textContent = data.coord.lon;
     let weather = document.querySelector("td#weather");
-    weather.textContent = data.weather.description;
+    weather.textContent = data.weather[0].description;
     let min = document.querySelector("td#min");
     min.textContent = data.main.temp_min;
     let max = document.querySelector("td#max");
@@ -46,6 +46,7 @@ function showResult(resp) {
     di.textContent = data.wind.deg;
     let name = document.querySelector("td#name");
     name.textContent = data.name;
+    console.log(data.name);
 
 
 }
