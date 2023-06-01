@@ -11,20 +11,13 @@ table{
   }
   
   table tr *:nth-child(1){
-    background: #49c5f0;
+    background: #0e45ea;
   }
   
   table tr *:nth-child(2){
-    background: #57b3e8;
+    background: #33b6da;
   }
   
-  table tr *:nth-child(3){
-    background: #649cdf;
-  }
-  
-  table tr *:nth-child(4){
-    background: #6e87d7;
-  }
   
   table th,table td{
     color:white;

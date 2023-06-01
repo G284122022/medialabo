@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="project.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <script src="project.js" defer></script>
   </head>
   <body>
@@ -13,15 +14,15 @@
     <input type="text" id="nyuryoku" name="nyuryoku" placeholder="検索キーワードを入力"> -->
     <select name="country" id="country">
       <option value="">検索する都市を選んでください</option>
-      <option value="cn">北京</option>
-      <option value="jp">東京</option>
-      <option value="syd">シドニー</option>
-      <option value="sing">シンガポール</option>
-      <option value="Lon">ロンドン</option>
-      <option value="Par">パリ</option>
-      <option value="Rio">リオデジャネイロ</option>
-      <option value="New">ニューヨーク</option>
-      <option value="Los">ロサンゼルス</option>
+      <option value="1816670">北京</option>
+      <option value="1850147">東京</option>
+      <option value="2147714">シドニー</option>
+      <option value="1880252">シンガポール</option>
+      <option value="2643743">ロンドン</option>
+      <option value="2968815">パリ</option>
+      <option value="3451189">リオデジャネイロ</option>
+      <option value="5128581">ニューヨーク</option>
+      <option value="5368361">ロサンゼルス</option>
     </select>
     <button id="submit">検索</button>
     <div id="display">
@@ -36,7 +37,7 @@
         </tr>
         <tr>
           <th>天気</th>
-          <td id="wea">データ</td>
+          <td id="weather">データ</td>
         </tr>
         <tr>
           <th>最低気温</th>
