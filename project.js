@@ -1,6 +1,7 @@
 let submit = document.querySelector("button#submit");
 submit.addEventListener("click", sendRequest);
 
+
 function sendRequest() {
     let input = document.querySelector("select#country");
     let id = input.value;
